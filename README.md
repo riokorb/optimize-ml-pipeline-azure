@@ -12,19 +12,17 @@ The best performing model was a Soft Voting Ensemble found using AutoML, using X
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.
-First, we retrieve the dataset from the given url using AzureDataFactory class.
+First, we retrieve the dataset from the given url using AzureDataFactory class.**
 
 The data is then cleaned using clean_data function that we have defined, which includes preprocessing steps like converting categorical variables to binary encoding, one hot encoding etc.
 
 The dataset is then split in the ratio of 70:30 for training and testing respectively.
 
-Next, we set up a parameter sampler and define 2 hyperparameters to be tuned, namely C and max_iter.
-C represents the inverse regularization parameter and max_iter represents the maximum number of iterations.
+Next, we set up a parameter sampler and define 2 hyperparameters to be tuned, namely C and max_iter. C represents the inverse regularization parameter and max_iter represents the maximum number of iterations.
 
 A HyperDrive Config is created using a SKLearn estimator and the parameter sampler.
 
-The accuracy is calculated on the test set for each run and the model corresponding
-to the best run with HyperDrive is saved.**
+The accuracy is calculated on the test set for each run and the model corresponding to the best run with HyperDrive is saved.
 
 **What are the benefits of the parameter sampler you chose?**
 By using Random Parameter Sampling in our parameter sampler, we are performing random sampling over the hyperparameter search space.
