@@ -49,7 +49,8 @@ The full list of models tested using AutoML is listed below:
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-AutoML and HyperDrive achieved 0.XXX and 0.YYY in terms of accuracy respectively, which is not a significant difference.
+
+AutoML and HyperDrive achieved 0.918 and 0.915 in terms of accuracy respectively, which is not a significant difference.
 
 AutoML definitely fared better in terms of architecture as it was able to try several models, which would require huge amounts of effort to be performed via HyperDrive (because a pipeline must be created for every model).
 
@@ -57,6 +58,7 @@ The difference could be because of the sheer ability of AutoML to compute a larg
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
+
 The accuracy of AutoML might be affected by imbalanced data (since some class imbalances were observed), which can lead to a falsely perceived positive effect of a model's accuracy, because the input data is biased towards a certain class.
 
 We can revisit the sampling methods and consider custom cross-validation strategies to try and mitigate the impact of imbalanced data on performance metrics.
