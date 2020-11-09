@@ -11,8 +11,8 @@ This dataset contains data about the personal and financial details of customers
 The best performing model was a Soft Voting Ensemble found using AutoML, using XGBoost Classifier with a standard scaler wrapper."
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.
-First, we retrieve the dataset from the given url using AzureDataFactory class.**
+**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+First, we retrieve the dataset from the given url using AzureDataFactory class.
 
 The data is then cleaned using clean_data function that we have defined, which includes preprocessing steps like converting categorical variables to binary encoding, one hot encoding etc.
 
