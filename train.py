@@ -17,15 +17,6 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 ### YOUR CODE HERE ###
 ds = TabularDatasetFactory.from_delimited_files(path="https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
 
-#from azureml.core import Workspace, Dataset
-#subscription_id = ''
-#resource_group = ''
-#workspace_name = ''
-
-#workspace = Workspace(subscription_id, resource_group, workspace_name)
-#dataset = Dataset.get_by_name(workspace, name = 'bankmarketing-train')
-#ds = dataset
-
 run = Run.get_context()
 
 def clean_data(data):
