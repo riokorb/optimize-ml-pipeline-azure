@@ -30,7 +30,7 @@ The accuracy is calculated on the test set for each run and the model correspond
 
 By using Random Parameter Sampling in our parameter sampler, we are performing random sampling over the hyperparameter search space.
 
-This drastically reduces our computation time, and still able to find reasonably good models to other, more rigorous hyperparameter optimization methods.
+This drastically reduces our computation time, and we are still able to find reasonably good models when compared to other, more rigorous hyperparameter optimization methods.
 
 **What are the benefits of the early stopping policy you chose?**
 By setting up the early stopping policy in our HyperDriveConfig, we can stop unproductive runs where the accuracy of the model is not improving beyond a pre-defined tolerable level for a given number of iterations.
