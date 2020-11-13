@@ -20,7 +20,7 @@ The data is then cleaned using clean_data function that we have defined, which i
 
 The dataset is then split in the ratio of 70:30 for training and testing respectively.
 
-Next, we set up a parameter sampler and define 2 hyperparameters to be tuned, namely C and max_iter. C represents the inverse regularization parameter and max_iter represents the maximum number of iterations.
+Next, we define a Scikit-learn based Logistic Regression model and set up a parameter sampler. We define 2 hyperparameters to be tuned, namely C and max_iter. C represents the inverse regularization parameter and max_iter represents the maximum number of iterations.
 
 A HyperDrive Config is created using a SKLearn estimator and the parameter sampler.
 
